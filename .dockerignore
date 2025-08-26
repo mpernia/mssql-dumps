@@ -1,0 +1,54 @@
+# Git files
+.git
+.gitignore
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Generated SQL files
+*.sql
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+
+# Documentation
+README.md
+LICENSE
+CHANGELOG.md
+
+# MacOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Docker related
+.dockerignore
+docker-compose*.yml
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Python files (if any)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/

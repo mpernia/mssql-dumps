@@ -1,0 +1,22 @@
+# Azure SQL connection settings
+MSSQL_SERVER=your-server-name.database.windows.net,1433
+MSSQL_DATABASE=your_database_name
+MSSQL_USER=your_sql_user
+MSSQL_PASSWORD=your_password
+
+# Output settings
+MSSQL_OUTPUT_FILE=/app/output/backup.sql
+
+# Optional settings
+# Tablas específicas para hacer backup (separadas por comas)
+# Dejar vacío para exportar todas las tablas
+MSSQL_TABLES=tabla1,tabla2,schema.tabla3
+
+# Tiempo de espera para consultas (en segundos)
+MSSQL_QUERY_TIMEOUT=300
+
+# Incluye sentencias DROP TABLE IF EXISTS
+MSSQL_DROP_TABLES=false
+
+# Clausula global de selección
+MSSQL_GLOBAL_WHERE_CLAUSE="role_id = 1"

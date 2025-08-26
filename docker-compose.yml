@@ -1,0 +1,20 @@
+
+services:
+  mssql-backup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+      - ./output:/app/output
+    environment:
+      - TZ=UTC
+      - MSSQL_SERVER=${MSSQL_SERVER:-}
+      - MSSQL_DATABASE=${MSSQL_DATABASE:-}
+      - MSSQL_USER=${MSSQL_USER:-}
+      - MSSQL_PASSWORD=${MSSQL_PASSWORD:-}
+      - MSSQL_OUTPUT_FILE=${MSSQL_OUTPUT_FILE:-/app/output/backup.sql}
+      - MSSQL_TABLES=${MSSQL_TABLES:-}
+      - MSSQL_QUERY_TIMEOUT=${MSSQL_QUERY_TIMEOUT:-0}
+
+

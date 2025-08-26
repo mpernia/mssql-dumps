@@ -1,0 +1,47 @@
+# Generated backup files
+*.sql
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+output/
+
+# Environment variables file
+.env
+
+# MacOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+*~
+.directory
+.Trash-*
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iws
+out/
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
+
+
